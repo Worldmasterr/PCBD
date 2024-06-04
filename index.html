@@ -50,7 +50,7 @@ $result = $conn->query($sql);
 </head>
 <body>
     <h1>Lista de Funcionários</h1>
-    <a href="create.php">Adicionar Novo Funcionário</a>
+    <a href="create.html">Adicionar Novo Funcionário</a>
     <table>
         <tr>
             <th>CPF</th>
@@ -68,8 +68,8 @@ $result = $conn->query($sql);
                         <td>{$row['Endereco']}</td>
                         <td>{$row['DataNascimento']}</td>
                         <td>
-                            <a href='update.php?CPF={$row['CPF']}'>Editar</a>
-                            <a href='delete.php?CPF={$row['CPF']}'>Deletar</a>
+                            <a href='update.html?CPF={$row['CPF']}'>Editar</a>
+                            <a href='delete.html?CPF={$row['CPF']}'>Deletar</a>
                         </td>
                       </tr>";
             }
