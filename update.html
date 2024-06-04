@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE funcionario SET Nome='$Nome', Endereco='$Endereco', DataNascimento='$DataNascimento' WHERE CPF='$CPF'";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php");
+        header("Location: index.html");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -99,6 +99,6 @@ $conn->close();
         <input type="date" id="DataNascimento" name="DataNascimento" value="<?php echo $row['DataNascimento']; ?>" required><br>
         <input type="submit" value="Atualizar">
     </form>
-    <a href="index.php">Voltar</a>
+    <a href="index.html">Voltar</a>
 </body>
 </html>
