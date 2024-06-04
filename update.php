@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "monorail.proxy.rlwy.net";
 $username = "root";
-$password = "";
-$dbname = "bd_pcdf_trabalho";
+$password = "qylvMiklHKdPNvVHRfDpaveQoXZWIfvM";
+$dbname = "railway";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
