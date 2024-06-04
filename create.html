@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$cpf', '$nome', '$endereco', '$DataNascimento')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php");
+        header("Location: index.html");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -91,6 +91,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="date" id="DataNascimento" name="DataNascimento" required><br>
         <input type="submit" value="Adicionar">
     </form>
-    <a href="index.php">Voltar</a>
+    <a href="index.html">Voltar</a>
 </body>
 </html>
